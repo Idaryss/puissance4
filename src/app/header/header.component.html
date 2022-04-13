@@ -1,0 +1,17 @@
+<header class="navigation" *ngIf="appContent">
+  <mat-toolbar color="primary">
+    <span>{{ appContent.HEADER_TITLE }}</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Language">
+  <mat-icon>language</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button (click)="onLanguage('fr')" mat-menu-item>
+    <span><img src="assets/img/French.png" alt="Drapeau France" height="15px" width="15px">  Francais</span>
+  </button>
+  <button (click)="onLanguage('en')" mat-menu-item>
+    <span><img src="assets/img/uk.png" alt="english flag" height="15px" width="15px">  English</span>
+  </button>
+</mat-menu>
+  </mat-toolbar>
+</header>

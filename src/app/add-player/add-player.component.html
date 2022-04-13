@@ -1,0 +1,32 @@
+<div *ngIf="appContent" class="login-container">
+  <form [formGroup]="playerForm" (ngSubmit)="onAddPlayer($event)">
+    <div class="login-container__form">
+      <div class="login-container__form__input">
+        <mat-form-field appearance="fill">
+          <mat-label>{{ appContent.PLAYER1_LABEL }}</mat-label>
+          <input formControlName="playerName1" matInput />
+          <mat-error *ngIf="playerForm.controls['playerName1'].invalid">
+            {{ appContent.PLAYER1_INPUT_PLACEHOLDER }}
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="login-container__form__input">
+        <mat-form-field appearance="fill">
+          <mat-label>{{ appContent.PLAYER2_LABEL }}</mat-label>
+          <input formControlName="playerName2" matInput />
+          <mat-error *ngIf="playerForm.controls['playerName1'].invalid">
+            {{ appContent.PLAYER2_INPUT_PLACEHOLDER }}
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <button
+        [disabled]="playerForm.invalid"
+        mat-raised-button
+        color="primary"
+        type="submit"
+      >
+        {{ appContent.LOGIN_BUTTON }}
+      </button>
+    </div>
+  </form>
+</div>

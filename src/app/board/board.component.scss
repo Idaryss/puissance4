@@ -1,0 +1,70 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  h2 {
+    place-self: center;
+  }
+}
+
+.player-board {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@keyframes slidein {
+  from {
+    transform: translatey(-600%);
+  }
+  to {
+    transform: translatey(0%);
+  }
+}
+
+.user1Selected {
+  border-radius: 55%;
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  animation: slidein 0.3s;
+}
+
+.user2Selected {
+  border-radius: 55%;
+  width: 80px;
+  height: 80px;
+  background-color: yellow;
+  animation: slidein 0.3s;
+}
+
+table {
+  margin: 25px auto;
+  border: 3px blue outset;
+  background-color: blue;
+  border-radius: 3%;
+  td {
+    width: 80px;
+    height: 80px;
+    border: 2px blue inset;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  table td {
+    height: 40px;
+    width: 40px;
+    > .user1Selected {
+      height: 40px;
+      width: 40px;
+    }
+      > .user2Selected {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}

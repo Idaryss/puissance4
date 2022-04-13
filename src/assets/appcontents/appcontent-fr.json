@@ -1,0 +1,22 @@
+{
+  "HEADER_TITLE": "Puissance 4 - Amuses-toi bien!",
+  "PLAYER1_LABEL": "Joueur 1",
+  "PLAYER1_INPUT_PLACEHOLDER": "Veuillez entrer un Joueur 1.",
+  "PLAYER2_LABEL": "Joueur 2",
+  "PLAYER2_INPUT_PLACEHOLDER": "Veuillez entrer un Joueur 2.",
+  "LOGIN_BUTTON": "Commencer la partie!",
+  "SCORE_LABEL": "Score: ",
+  "PLAYER_TURN": "C'est a <PLACEHOLDER> de jouer",
+  "GAME_WINNER_MODAL": "a gagné en ",
+  "TOKENS_NUMBER": "Nombre de jetons: ",
+  "SNACKBAR_COLUMN_COMPLETE": "La colonne est complete.",
+  "GAME_TIE": {
+    "TITLE": "Match Null !",
+    "CONTENT": "Cliquez sur le bouton Rejouer pour recommencer !",
+    "BUTTON": "Rejouer"
+  },
+  "GAME_WINNER": {
+    "CONTENT": "Cliquez sur le bouton Rejouer pour recommencer !",
+    "BUTTON": "Rejouer"
+  }
+}

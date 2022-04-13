@@ -1,0 +1,16 @@
+<ng-container *ngIf="appContent && players$ | async as players">
+  <div class="flex-container">
+      <h2>{{ appContent.PLAYER_TURN | placeholderReplace: playerTurn?.name }}</h2>
+      <app-player-board class="player-board" [appContent]="appContent" [players]="players.players"></app-player-board>
+    <table #gameBoard>
+      <tr *ngFor="let row of rowsTable; let rIdx = index">
+        <td
+          *ngFor="let col of columnsTable; let cIdx = index"
+          (click)="onClick(gameBoard, cIdx)"
+        >
+        <div class="free-cell"></div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</ng-container>

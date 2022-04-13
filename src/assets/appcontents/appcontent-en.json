@@ -1,0 +1,22 @@
+{
+  "HEADER_TITLE": "Connect 4 - Have Fun!",
+  "PLAYER1_LABEL": "Player 1",
+  "PLAYER1_INPUT_PLACEHOLDER": "Please enter a player 1.",
+  "PLAYER2_LABEL": "Player 2",
+  "PLAYER2_INPUT_PLACEHOLDER": "Please enter a player 1..",
+  "LOGIN_BUTTON": "Start the game!",
+  "SCORE_LABEL": "Score: ",
+  "PLAYER_TURN": "It's <PLACEHOLDER>'s turn",
+  "GAME_WINNER_MODAL": " win the game with an aligment in ",
+  "TOKENS_NUMBER": "Number of Tokens: ",
+  "SNACKBAR_COLUMN_COMPLETE": "The column is full",
+  "GAME_TIE": {
+    "TITLE": "Game Tie !",
+    "CONTENT": "Click on Replay button to restart !",
+    "BUTTON": "Restart"
+  },
+  "GAME_WINNER": {
+    "CONTENT": "Click on Replay button to restart !",
+    "BUTTON": "Restart"
+  }
+}

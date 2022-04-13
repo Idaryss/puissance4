@@ -1,0 +1,22 @@
+<ng-container *ngIf="appContent && players">
+  <div class="card-container" *ngFor="let player of players">
+    <mat-card>
+      <mat-card-title
+        >{{ player.name }}
+        <div class="token-{{ player.id }}"></div
+      ></mat-card-title>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <mat-list>
+          <mat-list-item
+            >{{ appContent.SCORE_LABEL }} {{ player.score }}</mat-list-item
+          >
+          <mat-divider></mat-divider>
+          <mat-list-item
+            >{{ appContent.TOKENS_NUMBER }} {{ player.tokens }}</mat-list-item
+          >
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</ng-container>
