@@ -1,21 +1,21 @@
+@mixin token {
+  display: inline-flex;
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+}
+
 .card-container {
   width: fit-content;
 }
 
 .token-1 {
-  display: inline-flex;
-  margin-left: 5px;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
+  @include token;
   background-color: red;
 }
 
 .token-2 {
-  display: inline-flex;
-  margin-left: 5px;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
+  @include token;
   background-color: yellow;
 }

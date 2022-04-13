@@ -1,3 +1,10 @@
+@mixin tokensSelected {
+  border-radius: 55%;
+  width: 80px;
+  height: 80px;
+  animation: slidein 0.3s;
+}
+
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -24,19 +31,13 @@
 }
 
 .user1Selected {
-  border-radius: 55%;
-  width: 80px;
-  height: 80px;
+  @include tokensSelected;
   background-color: red;
-  animation: slidein 0.3s;
 }
 
 .user2Selected {
-  border-radius: 55%;
-  width: 80px;
-  height: 80px;
+  @include tokensSelected;
   background-color: yellow;
-  animation: slidein 0.3s;
 }
 
 table {
@@ -62,7 +63,7 @@ table {
       height: 40px;
       width: 40px;
     }
-      > .user2Selected {
+    > .user2Selected {
       height: 40px;
       width: 40px;
     }
