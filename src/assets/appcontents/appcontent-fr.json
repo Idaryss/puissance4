@@ -7,7 +7,7 @@
   "LOGIN_BUTTON": "Commencer la partie!",
   "SCORE_LABEL": "Score: ",
   "PLAYER_TURN": "C'est a <PLACEHOLDER> de jouer",
-  "GAME_WINNER_MODAL": "a gagné en ",
+  "GAME_WINNER_MODAL": " a gagné en ",
   "TOKENS_NUMBER": "Nombre de jetons: ",
   "SNACKBAR_COLUMN_COMPLETE": "La colonne est complete.",
   "GAME_TIE": {
